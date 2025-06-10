@@ -9,45 +9,95 @@
 <body>
     <div class="container">
         <header>
-            <h1>Hello World! 🚀</h1>
-            <p class="subtitle">Welcome to LLM-Friendly App Ideas</p>
+            <h1>LLM-Friendly App Ideas 🚀</h1>
+            <p class="subtitle">Click on an idea to see the details</p>
         </header>
         
         <main>
-            <div class="hero">
-                <h2>Your journey into app development starts here</h2>
-                <p>This website will showcase a curated collection of app ideas perfect for learning and building with modern tools.</p>
-                
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number">59</span>
-                        <span class="stat-label">App Ideas</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">React Native</span>
-                        <span class="stat-label">Primary Tech Stack</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Beginner Friendly</span>
-                        <span class="stat-label">Difficulty Level</span>
-                    </div>
-                </div>
-            </div>
-            
-            <section class="coming-soon">
-                <h3>Coming Soon</h3>
-                <ul>
-                    <li>📱 Browse app ideas by category</li>
-                    <li>🔍 Search and filter functionality</li>
-                    <li>📊 Difficulty and complexity ratings</li>
-                    <li>💡 Implementation guides and tips</li>
-                </ul>
-            </section>
+            <div id="app-list" class="app-list"></div>
         </main>
         
         <footer>
             <p>Built with ❤️ for aspiring app developers</p>
         </footer>
     </div>
+
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="card-content"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let appIdeas = [];
+            const appList = document.getElementById('app-list');
+            const modal = document.getElementById('card-modal');
+            const modalContent = document.getElementById('card-content');
+            const closeButton = document.querySelector('.close-button');
+
+            fetch('LLM_Friendly_App_Ideas.json')
+                .then(response => response.json())
+                .then(data => {
+                    appIdeas = data.filter(idea => idea.Name); // Filter out ideas without a name
+                    displayAppIdeas();
+                })
+                .catch(error => {
+                    console.error('Error fetching app ideas:', error);
+                    appList.innerHTML = '<p>Could not load app ideas.</p>';
+                });
+
+            function displayAppIdeas() {
+                appList.innerHTML = '';
+                appIdeas.forEach((idea, index) => {
+                    if (!idea.Name) return;
+                    const appItem = document.createElement('div');
+                    appItem.className = 'app-item';
+                    appItem.textContent = idea.Name;
+                    appItem.dataset.index = index;
+                    appItem.addEventListener('click', () => openCard(index));
+                    appList.appendChild(appItem);
+                });
+            }
+
+            function openCard(index) {
+                const idea = appIdeas[index];
+                modalContent.innerHTML = `
+                    <h2 contenteditable="true" data-field="Name">${idea.Name}</h2>
+                    ${Object.keys(idea).map(key => {
+                        if (key === 'Name' || key === 'Order' || key === 'Origin') return '';
+                        return `
+                            <div class="card-field">
+                                <label>${key.replace(/([A-Z])/g, ' $1')}</label>
+                                <div contenteditable="true" data-field="${key}" class="editable-field">${idea[key] || 'N/A'}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                `;
+                
+                modalContent.querySelectorAll('[contenteditable="true"]').forEach(field => {
+                    field.addEventListener('input', (e) => {
+                        const fieldName = e.target.dataset.field;
+                        appIdeas[index][fieldName] = e.target.textContent;
+                    });
+                });
+
+                modal.style.display = 'block';
+            }
+
+            closeButton.addEventListener('click', () => {
+                modal.style.display = 'none';
+                displayAppIdeas(); // Refresh list in case names were changed
+            });
+
+            window.addEventListener('click', (event) => {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                    displayAppIdeas(); // Refresh list in case names were changed
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
