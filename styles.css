@@ -76,6 +76,7 @@ main {
     text-align: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 .app-item:hover {

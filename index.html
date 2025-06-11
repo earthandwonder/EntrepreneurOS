@@ -14,8 +14,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>LLM-Friendly App Ideas 🚀</h1>
-            <p class="subtitle">Click on an idea to see the details</p>
+            <h1>LLM-Friendly App Ideas ��</h1>
+            <a href="goals.md" class="subtitle"></a>
         </header>
         
         <main>
@@ -36,6 +36,24 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const subtitle = document.querySelector('.subtitle');
+
+            fetch('goals.md?v=' + new Date().getTime())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    const firstLine = text.split('\n')[0].replace(/^GOAL: /, '');
+                    subtitle.textContent = firstLine;
+                })
+                .catch(error => {
+                    console.error('Error fetching or processing goals.md:', error);
+                    subtitle.textContent = 'Click on an idea to see the details'; // Fallback text
+                });
+
             let appIdeas = [];
             const appList = document.getElementById('app-list');
             const modal = document.getElementById('card-modal');

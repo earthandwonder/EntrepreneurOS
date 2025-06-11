@@ -1,4 +1,4 @@
-Goal: Achieve a consistent weekly income of $800 AUD from app development ventures within 3 months.
+GOAL: Achieve a consistent weekly income of $800 AUD from app development ventures within 3 months.
 
 Apps must have a trifecta:
 
