@@ -1,0 +1,13 @@
+{
+    "Order": "the order in which we will build planned apps",
+    "Origin": "the origin of the app idea",
+    "Name": "the name of the app",
+    "Keywords": "the keywords that will be used to market the app",
+    "Marketing": "the marketing strategy for the app. Read shortFormVideoMarketing.md for more information.",
+    "Functionality": "the basic functionality of the app",
+    "SkillsToLearn": "the skills that will be learned while building the app",
+    "TechStack": "the tech stack that will be used to build the app",
+    "desire": "the desire that the app will satisfy",
+    "retention": "the retention technique for the app",
+    "status": "the status of the app"
+} 
