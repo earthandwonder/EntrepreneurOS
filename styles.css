@@ -11,6 +11,7 @@ body {
     color: #333;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .container {
@@ -53,6 +54,7 @@ main {
     padding: 1.5rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     animation: fadeInUp 1s ease-out 0.4s both;
+    margin: 0 1rem;
 }
 
 .app-list {
@@ -72,6 +74,8 @@ main {
     transition: all 0.3s ease;
     border: 1px solid #e9ecef;
     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .app-item:hover {

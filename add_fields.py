@@ -1,16 +1,25 @@
 #!/usr/bin/env python3
 """
-Script to add 'desire' and 'retention' fields to each entry in the LLM_Friendly_App_Ideas.json file.
-This script will read the JSON file, add the new fields with empty string default values,
+Script to add a 'status' field to each entry in the LLM_Friendly_App_Ideas.json file.
+This script will read the JSON file, add the new field with a default value,
 and save the updated JSON back to the file.
 """
 
 import json
 import os
+from enum import Enum
 
-def add_fields_to_json(filename="LLM_Friendly_App_Ideas.json"):
+
+class Status(Enum):
+    """Enum for the status of an app idea."""
+    IDEA = 'Idea'
+    PLANNED = 'Planned'
+    COMPLETED = 'Completed'
+
+
+def add_status_field_to_json(filename="LLM_Friendly_App_Ideas.json"):
     """
-    Add 'desire' and 'retention' fields to each entry in the JSON file.
+    Add a 'status' field to each entry in the JSON file.
     
     Args:
         filename (str): Path to the JSON file to modify
@@ -32,26 +41,28 @@ def add_fields_to_json(filename="LLM_Friendly_App_Ideas.json"):
             print("Error: JSON file should contain a list of objects")
             return False
         
-        # Add the new fields to each entry
-        print(f"Adding 'desire' and 'retention' fields to {len(data)} entries...")
+        # Add the new field to each entry
+        print(f"Adding 'status' field to {len(data)} entries...")
         entries_modified = 0
         
         for entry in data:
             if isinstance(entry, dict):
-                # Only add fields if they don't already exist
-                if 'desire' not in entry:
-                    entry['desire'] = ""
-                if 'retention' not in entry:
-                    entry['retention'] = ""
-                entries_modified += 1
+                # Only add field if it doesn't already exist
+                if 'status' not in entry:
+                    entry['status'] = Status.IDEA.value
+                    entries_modified += 1
         
+        if entries_modified == 0:
+            print("No entries needed updating.")
+            return True
+            
         # Write the updated JSON back to the file
         print(f"Writing updated data back to {filename}...")
         with open(filename, 'w', encoding='utf-8') as file:
             json.dump(data, file, indent=2, ensure_ascii=False)
         
         print(f"✅ Successfully updated {entries_modified} entries!")
-        print(f"Added 'desire' and 'retention' fields to all entries in {filename}")
+        print(f"Added 'status' field to all relevant entries in {filename}")
         return True
         
     except json.JSONDecodeError as e:
@@ -68,7 +79,7 @@ def main():
     # You can modify the filename here if needed
     filename = "LLM_Friendly_App_Ideas.json"
     
-    success = add_fields_to_json(filename)
+    success = add_status_field_to_json(filename)
     
     if success:
         print("\n✨ Process completed successfully!")

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLM-Friendly App Ideas</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .app-item.status-idea, .modal-content.status-idea { background-color: #f0f8ff; }
+        .app-item.status-planned, .modal-content.status-planned { background-color: #fffacd; }
+        .app-item.status-completed, .modal-content.status-completed { background-color: #f0fff0; }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -37,7 +42,7 @@
             const modalContent = document.getElementById('card-content');
             const closeButton = document.querySelector('.close-button');
 
-            fetch('LLM_Friendly_App_Ideas.json')
+            fetch('LLM_Friendly_App_Ideas.json?v=' + new Date().getTime())
                 .then(response => response.json())
                 .then(data => {
                     appIdeas = data.filter(idea => idea.Name); // Filter out ideas without a name
@@ -54,6 +59,9 @@
                     if (!idea.Name) return;
                     const appItem = document.createElement('div');
                     appItem.className = 'app-item';
+                    if (idea.status) {
+                        appItem.classList.add(`status-${idea.status.toLowerCase()}`);
+                    }
                     appItem.textContent = idea.Name;
                     appItem.dataset.index = index;
                     appItem.addEventListener('click', () => openCard(index));
@@ -63,10 +71,30 @@
 
             function openCard(index) {
                 const idea = appIdeas[index];
+                const modalContentParent = modalContent.parentElement;
+
+                modalContentParent.classList.remove('status-idea', 'status-planned', 'status-completed');
+                if (idea.status) {
+                    modalContentParent.classList.add(`status-${idea.status.toLowerCase()}`);
+                }
+                
                 modalContent.innerHTML = `
                     <h2 contenteditable="true" data-field="Name">${idea.Name}</h2>
                     ${Object.keys(idea).map(key => {
                         if (key === 'Name' || key === 'Order' || key === 'Origin') return '';
+
+                        if (key === 'status') {
+                            const statuses = ['Idea', 'Planned', 'Completed'];
+                            return `
+                                <div class="card-field">
+                                    <label>${key.replace(/([A-Z])/g, ' $1')}</label>
+                                    <select data-field="${key}" class="editable-field">
+                                        ${statuses.map(status => `<option value="${status}" ${idea[key] === status ? 'selected' : ''}>${status}</option>`).join('')}
+                                    </select>
+                                </div>
+                            `;
+                        }
+
                         return `
                             <div class="card-field">
                                 <label>${key.replace(/([A-Z])/g, ' $1')}</label>
@@ -74,13 +102,24 @@
                             </div>
                         `;
                     }).join('')}
+                     <button id="save-changes" class="button">Save Changes</button>
                 `;
                 
-                modalContent.querySelectorAll('[contenteditable="true"]').forEach(field => {
+                modalContent.querySelectorAll('[contenteditable="true"], select').forEach(field => {
                     field.addEventListener('input', (e) => {
                         const fieldName = e.target.dataset.field;
-                        appIdeas[index][fieldName] = e.target.textContent;
+                        appIdeas[index][fieldName] = e.target.value || e.target.textContent;
                     });
+                });
+
+                document.getElementById('save-changes').addEventListener('click', () => {
+                    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appIdeas, null, 2));
+                    const downloadAnchorNode = document.createElement('a');
+                    downloadAnchorNode.setAttribute("href",     dataStr);
+                    downloadAnchorNode.setAttribute("download", "LLM_Friendly_App_Ideas.json");
+                    document.body.appendChild(downloadAnchorNode); // required for firefox
+                    downloadAnchorNode.click();
+                    downloadAnchorNode.remove();
                 });
 
                 modal.style.display = 'block';

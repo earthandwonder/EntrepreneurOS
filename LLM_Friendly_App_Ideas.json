@@ -9,7 +9,8 @@
     "SkillsToLearn": "- Single-screen UI; Minimal/no data storage; Possibly allow user-defined ranges",
     "TechStack": "React Native (default)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Completed"
   },
   {
     "Order": 3,
@@ -21,7 +22,8 @@
     "SkillsToLearn": "- Local storage of text content; Optional push notifications (daily quote)",
     "TechStack": "React Native with local storage (SQLite/Realm)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -33,7 +35,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Completed"
   },
   {
     "Order": 4,
@@ -45,7 +48,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Completed"
   },
   {
     "Order": 4,
@@ -57,7 +61,8 @@
     "SkillsToLearn": "- Daily notifications; Favorites and sharing options",
     "TechStack": "React Native with notification libraries and social sharing integrations\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 5,
@@ -69,7 +74,8 @@
     "SkillsToLearn": "- Regional variations; Seasonal change notifications; Integration with local weather data",
     "TechStack": "React Native with native geolocation modules and weather API integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 6,
@@ -81,7 +87,8 @@
     "SkillsToLearn": "- Customizable notification scheduling; User settings (categories, frequency); Slightly more advanced push notifications",
     "TechStack": "React Native with push notifications and background scheduling (native modules as needed)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 7,
@@ -93,7 +100,8 @@
     "SkillsToLearn": "- Searchable library; User ratings and reviews; Integration with book databases",
     "TechStack": "React Native with API integration and local storage\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 8,
@@ -105,7 +113,8 @@
     "SkillsToLearn": "- Save favorites; Sharing options; Explore themes",
     "TechStack": "React Native (default) with social sharing libraries\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 9,
@@ -117,7 +126,8 @@
     "SkillsToLearn": "- User submissions; Genre categorization; Daily notifications",
     "TechStack": "React Native with local storage and notification libraries\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -129,7 +139,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 10,
@@ -141,7 +152,8 @@
     "SkillsToLearn": "- Text input and data persistence (indexed by date); Optional passcode/biometric lock; Could add export or backup features",
     "TechStack": "React Native with secure storage (SQLite/Realm) and biometric integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 2,
@@ -153,7 +165,8 @@
     "SkillsToLearn": "- Basic CRUD (create, read, update, delete); Local data storage (persist the checklist)",
     "TechStack": "React Native with AsyncStorage/local storage libraries\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 11,
@@ -165,7 +178,8 @@
     "SkillsToLearn": "- Advanced CRUD with optional reminders; Possibly push notifications for deadlines; Sorting/filtering tasks",
     "TechStack": "React Native with local data storage and push notification modules\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 12,
@@ -177,7 +191,8 @@
     "SkillsToLearn": "- Customizable frequency; Reminders; Cleaning tips",
     "TechStack": "React Native with scheduling libraries and local storage\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 13,
@@ -189,7 +204,8 @@
     "SkillsToLearn": "- Widget creation (iOS/Android); Local notifications or alarms; Handling multiple user-defined events",
     "TechStack": "React Native with native widget extensions for iOS/Android\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 14,
@@ -201,7 +217,8 @@
     "SkillsToLearn": "- Session alerts; History tracking; UV index integration",
     "TechStack": "React Native with native timer modules and potential HealthKit/Google Fit integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 15,
@@ -213,7 +230,8 @@
     "SkillsToLearn": "- Structured day-view schedule; Possibly tie in push notifications; Data storage of day-based tasks and notes",
     "TechStack": "React Native with calendar integration and native notification support\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 16,
@@ -225,7 +243,8 @@
     "SkillsToLearn": "- Basic location usage (on-demand GPS); External API calls for sunrise/sunset times; Event-based push notifications",
     "TechStack": "React Native with native geolocation and API integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 17,
@@ -237,7 +256,8 @@
     "SkillsToLearn": "- Integration with local flora databases; Peak bloom notifications; Photo sharing",
     "TechStack": "React Native with geolocation and external flora API integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 18,
@@ -249,7 +269,8 @@
     "SkillsToLearn": "- Date-based tracking; Simple data visualization (e.g., streak count); Possibly motivational notifications when a streak is broken or extended",
     "TechStack": "React Native (default)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 19,
@@ -261,7 +282,8 @@
     "SkillsToLearn": "- Custom habit lists; Streak tracking; Motivational reminders",
     "TechStack": "React Native (default)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 20,
@@ -273,7 +295,8 @@
     "SkillsToLearn": "- Step-by-step routine guidance; Customizable checklists; Progress tracking",
     "TechStack": "React Native (default)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 21,
@@ -285,7 +308,8 @@
     "SkillsToLearn": "- Detailed progress charts; Goal setting; Supportive notifications",
     "TechStack": "React Native (default)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 22,
@@ -297,7 +321,8 @@
     "SkillsToLearn": "React Native with calendar and scheduling libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 23,
@@ -309,7 +334,8 @@
     "SkillsToLearn": "React Native (default)\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 24,
@@ -321,7 +347,8 @@
     "SkillsToLearn": "- Goal tracking; Progress reports; Calendar integration",
     "TechStack": "React Native with calendar integration and progress tracking libraries\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 25,
@@ -333,7 +360,8 @@
     "SkillsToLearn": "React Native with native PDF generation libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 26,
@@ -345,7 +373,8 @@
     "SkillsToLearn": "- Sleep pattern analytics; Charting and logs; Personalized sleep tips",
     "TechStack": "React Native with charting libraries and native sensor integrations (if needed)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 27,
@@ -357,7 +386,8 @@
     "SkillsToLearn": "React Native with native geolocation and background tracking modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 28,
@@ -369,7 +399,8 @@
     "SkillsToLearn": "React Native with secure storage and charting libraries (e.g., Victory, React Native Chart Kit)\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 29,
@@ -381,7 +412,8 @@
     "SkillsToLearn": "React Native (default)\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 30,
@@ -393,7 +425,8 @@
     "SkillsToLearn": "- Search functionality; Filtering options; Integration with job APIs or web scraping techniques",
     "TechStack": "React Native with API integration (and server-side support if needed)\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 31,
@@ -405,7 +438,8 @@
     "SkillsToLearn": "React Native (default)\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 32,
@@ -417,7 +451,8 @@
     "SkillsToLearn": "React Native with scheduling and reminder libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 33,
@@ -429,7 +464,8 @@
     "SkillsToLearn": "React Native (default)\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 34,
@@ -441,7 +477,8 @@
     "SkillsToLearn": "React Native with API integration and native image handling\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 35,
@@ -453,7 +490,8 @@
     "SkillsToLearn": "React Native with native widget support\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 36,
@@ -465,7 +503,8 @@
     "SkillsToLearn": "React Native with native widget extensions\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 37,
@@ -477,7 +516,8 @@
     "SkillsToLearn": "React Native with native widget integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 38,
@@ -489,7 +529,8 @@
     "SkillsToLearn": "React Native with native image processing and PDF generation modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 39,
@@ -501,7 +542,8 @@
     "SkillsToLearn": "",
     "TechStack": "React Native with native modules for advanced video processing, swipe gestures, and performance optimizations\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 40,
@@ -513,7 +555,8 @@
     "SkillsToLearn": "React Native with API integration for AI services\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 41,
@@ -525,7 +568,8 @@
     "SkillsToLearn": "- Text input with analysis; Potential AI integration for interpretation; Journal integration",
     "TechStack": "React Native with AI API integration\\",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -537,7 +581,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 42,
@@ -549,7 +594,8 @@
     "SkillsToLearn": "React Native with API integration for recipe suggestions\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 43,
@@ -561,7 +607,8 @@
     "SkillsToLearn": "React Native with AI API integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 44,
@@ -573,7 +620,8 @@
     "SkillsToLearn": "React Native with AI API integration and real-time processing modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 45,
@@ -585,7 +633,8 @@
     "SkillsToLearn": "React Native with AI integration and data analytics modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 46,
@@ -597,7 +646,8 @@
     "SkillsToLearn": "React Native with AI API integration for educational content\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 47,
@@ -609,7 +659,8 @@
     "SkillsToLearn": "React Native with integrations to email/messaging APIs\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 48,
@@ -621,7 +672,8 @@
     "SkillsToLearn": "React Native with native image capture and AI API integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 49,
@@ -633,7 +685,8 @@
     "SkillsToLearn": "React Native with native image processing and AI integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 50,
@@ -645,7 +698,8 @@
     "SkillsToLearn": "React Native with image analysis libraries and AI API integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 51,
@@ -657,7 +711,8 @@
     "SkillsToLearn": "React Native with native audio capture and transcription API integration\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 52,
@@ -669,7 +724,8 @@
     "SkillsToLearn": "React Native with native audio recording and transcription modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 53,
@@ -681,7 +737,8 @@
     "SkillsToLearn": "React Native with native video processing and analysis libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 54,
@@ -693,7 +750,8 @@
     "SkillsToLearn": "React Native with native audio processing for real-time feedback\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 55,
@@ -705,7 +763,8 @@
     "SkillsToLearn": "React Native with low-latency native audio processing modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 56,
@@ -717,7 +776,8 @@
     "SkillsToLearn": "React Native with native audio analysis and instrument integration libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 57,
@@ -729,7 +789,8 @@
     "SkillsToLearn": "React Native with native video analysis and machine learning modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 58,
@@ -741,7 +802,8 @@
     "SkillsToLearn": "React Native with advanced native video processing and real-time analysis modules\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": 59,
@@ -753,7 +815,8 @@
     "SkillsToLearn": "React Native with API integration and native data visualization libraries\\",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -765,7 +828,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -777,7 +841,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -789,7 +854,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -801,7 +867,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -813,7 +880,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -825,7 +893,8 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": ""
+    "retention": "",
+    "status": "Idea"
   },
   {
     "Order": null,
@@ -837,6 +906,7 @@
     "SkillsToLearn": "",
     "TechStack": "",
     "desire": "",
-    "retention": "Weekly Email newsletter of the best AI conversations."
+    "retention": "Weekly Email newsletter of the best AI conversations.",
+    "status": "Idea"
   }
 ]
