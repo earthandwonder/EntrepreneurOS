@@ -5,11 +5,11 @@
     "Name": "Coin Toss",
     "Keywords": "dice roller [44,45,competitive], coin flip [40,45, v. competitive], random number generator [40,45, doable], coin toss [25,45, V. doable], 2 up (none but might trend), dice game [32,64], heads or tails",
     "Marketing": "Pure ASO",
-    "Functionality": "Generates random numbers (or dice rolls, coin flips) at the press of a button. Extremely simple functionality'97perfect first app project.",
-    "SkillsToLearn": "- Single-screen UI; Minimal/no data storage; Possibly allow user-defined ranges",
+    "Functionality": "Generates random numbers (or dice rolls, coin flips) at the press of a button. Extremely simple functionality. perfect first app project.",
+    "SkillsToLearn": "- Single-screen UI; Minimal data storage, just coin toss & streak history, animation on toss and streak increase",
     "TechStack": "React Native (default)",
     "desire": "To make quick, fun, and random decisions or settle trivial disputes.",
-    "retention": "Gamification through achievements (e.g., '100 flips!'), leaderboards for consecutive heads/tails, or customizable coin designs.",
+    "retention": "streaks for the same result in a row",
     "status": "Completed"
   },
   {
@@ -17,10 +17,10 @@
     "Origin": "Brainstorm",
     "Name": "Quotes by Naval/Art of War/48 Laws of Power/Shakespeare/Musashi/feminist quotes",
     "Keywords": "Only Shakespeare, & Bible have any search traffic. Hard to believe",
-    "Marketing": "Targeted ads on social media platforms for followers of these figures. Content marketing through blogs and forums discussing their philosophies.",
-    "Functionality": "A curated library of quotes from various influential figures, with optional daily notifications. The simplest form of a content-driven app.",
+    "Marketing": "Targeted ads on social media platforms for followers of these figures, if the CAC is worth it.",
+    "Functionality": "A curated library of quotes from various influential figures, with optional daily notifications. Also a widget. Some difficulty in having quotes of varying lengths in one screen/widget look good visually.",
     "SkillsToLearn": "- Local storage of text content; Optional push notifications (daily quote)",
-    "TechStack": "React Native with local storage (SQLite/Realm)",
+    "TechStack": "React Native with local storage async",
     "desire": "To gain daily wisdom, inspiration, and motivation from respected thinkers.",
     "retention": "Daily notifications, ability to favorite and share quotes, and discovering new authors.",
     "status": "Idea"
